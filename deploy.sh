@@ -1,6 +1,6 @@
 docker build -t levanderia/multi-client:latest -t levanderia/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t levanderia/multi-server:latest -t levanderia/multi-server:$SHA  -f ./server/Dockerfile ./server
-docker build -t levanderia/multi-worker:latest -t levanderia/multi-worker:$SHA  -f ./worker/Dockerfile ./worker
+docker build -t levanderia/multi-server:latest -t levanderia/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t levanderia/multi-worker:latest -t levanderia/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push levanderia/multi-client:latest
 docker push levanderia/multi-server:latest
